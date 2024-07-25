@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    position: sticky;
+
+}
+.menu-list{
+    list-style-type: none;
+}
+.list-items{
+    list-style-type: none;
+   display: flex;
+   gap: 30px;
+   text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 30px;
+   text-align: right;
+}
+.list-items li a {
+    text-decoration: none;
+    color: rgb(38, 230, 21);
+    justify-content: space-around;
+}

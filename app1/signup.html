@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/design/signup.css">
+    <script src="/javascript/signup.js"></script>
+</head>
+<body>
+<div class="navbar">
+            <div class="logo">
+                <img src="/images/assets/logo.webp" alt="id" height="80px">
+            </div>
+            <div class="menu-list">
+                <ul class="list-items">
+                    <li><a href="/app1/login.html">Resume</a></li>
+                    <li><a href="/app1/login.html">Blog</a></li>
+                    <li><a href="/app1/login.html">Contact</a></li>
+                    <li><a href="/app1/login.html">Log In</a></li>
+                    <!-- <li><a href="/app1/signup.html">Sign Up</a></li> -->
+
+                </ul>
+            </div>
+</div>
+    <section class="signup">
+        <header class="header">Create new account here</header>
+        <form name = "f1" class="form" method="post" onsubmit="return validateForm()">
+            <div class="input-box">
+                <label for="">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your Full name" />
+            </div>
+            <div class="input-box">
+                <label for="">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="input-box">
+                <label for="">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Password here" />
+            </div>
+            <div class="input-box">
+                <label for="">Confirm password</label><br>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Conform password" />
+            </div>
+            <button id="button1" type="submit">Signup</button>
+        </form>
+    </section>
+    <!-- <div id="message">
+        <h3>A right password requires:</h3>
+        <p id="letter" class="invalid">A<b>lowercas</b><b>letter</b></p>
+        <p id="capital" class="invalid">A<b>capital(Uppercase)</b><b>Lowercase</b></p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 Characters</b></p>
+        
+    </div> -->
+</body>
+</html>

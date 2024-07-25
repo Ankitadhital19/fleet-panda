@@ -28,11 +28,11 @@
 }
 .list-items li a {
     text-decoration: none;
-    color: rgb(210, 98, 132);
+    color: rgb(38, 230, 21);
     justify-content: space-around;
 }
 .hero-section{
-    background-color: rgb(217, 113, 142);
+    background-color: rgb(113, 217, 136);
     display: flex;
     justify-content: space-around;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -44,25 +44,25 @@
     height: 80%;
 }
 
-.img{
+.background-image{
     align-items:end;
     justify-content: end;
 }
 
-.img2{
+.image{
     border-radius: 50%;
     align-items:end;
     
     
 }
-.hello{
+.header{
     font-size: 35px;
 }
-.bit{
+.inside-heading{
     color: #fefefe;
     font-size: 30px;
 }
-.hi{
+.paragraph{
     font-size: 20px;
 }
 .flex{
@@ -72,12 +72,43 @@
     padding:150px ;
     /* display: flex; */
 }
-.my{
+/* .circle{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    padding: 50px;
+   
+}
+.mid1{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;  
+    background-color:skyblue ;
+}
+.mid2{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;  
+    background-color:rgb(176, 203, 243) ;
+}
+.mid3{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;  
+    background-color:purple ;
+} */
+/* .my{
     color: rgb(245, 240, 234);
+} */
+.footer{
+    background-color: grey;
 }
 .social-icons{
     display: flex;
     justify-content: center;
+    padding: 80px;
 }
 .social-icons a{
     
@@ -97,29 +128,14 @@
     transition: 0.5s;
     background-color: black;
 }
-.circle{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    gap: 10px;
+.copy-right{
+   /* background-color: gray; */
+   text-align: center;
+   padding: 40px;
 }
-.mid1{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;  
-    background-color:skyblue ;
-}
-.mid2{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;  
-    background-color:rgb(176, 203, 243) ;
-}
-.mid3{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;  
-    background-color:purple ;
+
+
+.follow{
+    text-align: center;
 }
 

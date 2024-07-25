@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.nav{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: rgb(154, 204, 141);
+   text-decoration: none;
+   box-shadow:0px 10px 7px rgb(190, 159, 159);
+}
+.nav .logo{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+#search{
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    border: none;
+    font-size: 18px;
+    background-color: aliceblue;
+}
+#search-button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: aliceblue;
+    margin-left: 10px;
+}
+#blog-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px;
+}
+.blog-crad{
+    width: 500px;
+    border: 1px solid  black;
+    border-radius: 10px;
+  box-shadow: 0px 10px 7px rgb(190, 159, 159);
+  cursor: pointer; 
+  margin: 40px;
+  padding: 1rem;
+
+
+}
+.blog-crad:hover{
+    box-shadow: 4px 4px 10px rgb(154, 204, 141);
+}
+.blog-crad img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.blog-crad h2{
+    font-size: 1.7rem;
+    color: brown;
+    font-weight: 500px;
+
+}
+.blog-crad p{
+    font-size: 17px;
+    padding-top: 8px;
+}
+@media (max-width:500px) {
+    
+}
