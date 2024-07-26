@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    position: sticky;
+
+}
+.menu-list{
+    list-style-type: none;
+}
+.list-items{
+    list-style-type: none;
+   display: flex;
+   gap: 30px;
+   text-decoration: none;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding: 30px;
+   text-align: right;
+}
+.list-items li a {
+    text-decoration: none;
+    color: rgb(38, 230, 21);
+    justify-content: space-around;
+}
+.signup{
+    position: relative;
+    width: 30%;
+    height: 7%;
+    background-color: rgb(100, 100, 68);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(111, 157, 230);
+    box-sizing: content-box;
+    text-align: left;
+   margin: 0 auto;
+}
+
+.header{
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    justify-content: space-between;
+}
+.form {
+    margin-top: 30px;
+}
+.form .input-box {
+    width: 90%;
+    margin: 10px;
+    /* height: 20px; */
+}
+.input-box label {
+    color: rgb(107, 172, 233);
+}
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 90%;
+    color: #3F383F;
+    margin-top: 6px;
+    outline:rgb(121, 127, 173);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgb(171, 143, 166);
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Style the container for inputs */
+  .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
