@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Multitenancy" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <% if signed_in? %>
+       <%= link_to "Dashboard", dashboard_path%>
+       <%= link_to "Tenants", tenants_path %>
+       <%= link_to current_user.email, edit_user_registration_path %>
+      <%# <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+      <%# <%= button_to "Log out", destroy_user_session_path, method: :delete, form: { "data-turbo" => "false" } %>
+       <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: "false" } %>
+      <% else %>
+      <%= link_to "Log in", new_user_session_path %>
+      <%= link_to "Register", new_user_registration_path %>
+      <% end %>
+      <%= link_to "Home", root_path%>
+      <%= link_to "Dashboard", dashboard_path%>
+      <%= yield %>
+  </body>
+</html>
