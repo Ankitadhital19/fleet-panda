@@ -1,11 +1,14 @@
-<% content_for :title, "New tenant" %>
+<% content_for :title, "New Organization" %>
 
-<h1>New tenant</h1>
+<h1 class="page-title">Organization</h1>
 
-<%= render "form", tenant: @tenant %>
+<div class="form-container">
+  <%= render "form", tenant: @tenant %>
+</div>
 
 <br>
 
-<div>
-  <%= link_to "Back to tenants", tenants_path %>
+<div class="link-container">
+  <%= link_to "Back to Organizations", tenants_path, class: "back-link"%>
 </div>
+

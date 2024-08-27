@@ -2,11 +2,13 @@
 
 <%= render @tenant %>
 
-<div>
-  <%= link_to "Edit this tenant", edit_tenant_path(@tenant) %> |
-  <%= link_to "Back to tenants", tenants_path %>
+<div class="action-buttons">
+  <%= link_to "Edit this Organization", edit_tenant_path(@tenant), class: "btn-link" %> |
+  <%= link_to "Back to Organization", tenants_path, class: "btn-link"%>
+  <%= button_to "Destroy this Organization", @tenant, method: :delete, class: "btn-danger"%>
+  <%= link_to "Invite Member", tenant_members_path(@tenant), class: "btn-link"%> 
+ <%# <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: "false" } %> 
 
-  <%= button_to "Destroy this tenant", @tenant, method: :delete %>
-</div>
 
-<%= link_to "Memeber", tenant_members_path(@tenant)%>
+
+

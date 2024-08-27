@@ -1,16 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Tenants" %>
+<% content_for :title, "Organization" %>
 
-<h1>Tenants</h1>
+<h1 class= "org-title">Organizations</h1>
 
 <div id="tenants">
   <% @tenants.each do |tenant| %>
     <%= render tenant %>
     <p>
-      <%= link_to "Show this tenant", tenant %>
+      <%= link_to "Show this Organization", tenant, class: "view-link" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New tenant", new_tenant_path %>
+<%= link_to "New Organization", new_tenant_path, class: "new-organization-link" %>
+ <%# <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: "false" } %>   

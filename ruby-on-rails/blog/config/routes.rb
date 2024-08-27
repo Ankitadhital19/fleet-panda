@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
-  root "articles#index"
+  get "dashboard/index"
+  devise_for :users, controllers: { sessions: "users/sessions" }
+  root "dashboard#index"
   resources :articles do
     resources :comments
   end
-
-  get "/articles", to: "articles#index"
-  get "/articles/:id", to: "articles#show"
+get "my_articles", to: "articles#my_articles"
+ get "dashboard", to: "dashboard#index"
+  # get "/articles", to: "articles#index"
+  # get "/articles/:id", to: "articles#show"
+  # get "signup_page", to: "login_page#signup_page"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

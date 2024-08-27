@@ -1,6 +1,6 @@
 <%= form_with(model: tenant) do |form| %>
   <% if tenant.errors.any? %>
-    <div style="color: red">
+    <div style="color: red", class="error-messages>
       <h2><%= pluralize(tenant.errors.count, "error") %> prohibited this tenant from being saved:</h2>
 
       <ul>

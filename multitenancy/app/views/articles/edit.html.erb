@@ -1,0 +1,28 @@
+<% content_for :title, "Editing Article" %>
+
+<h1 class="page-title">Editing Article</h1>
+
+<br>
+
+<div class="form-container">
+  <%= form_with(model: @article, url: tenant_article_path(@tenant, @article), method: :patch) do |form| %>
+    <div class="field">
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+    <div>
+        <%= form.label :content, style: "display: block" %>
+        <%= form.text_area :content %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Edit Article" %>
+    </div>
+     
+
+  <% end %>
+
+  <%= link_to 'Back', tenant_articles_path(@tenant) %>
+</div>
+
+ 

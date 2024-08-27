@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  # get "profiles/show"
+  # get "profiles/edit"
+  # get "profiles/update"
   resources :tenants do
+    resources :articles do
+      resources :comments, only: [ :new, :create, :edit ]
+    end
   resources :members do
     collection do
       post :invite
@@ -7,6 +13,7 @@ Rails.application.routes.draw do
   end
   end
   devise_for :users
+  resources :profiles, only: [:show, :edit, :update]
   root "static_pages#landing_page"
   get "dashboard", to: "static_pages#dashboard"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
